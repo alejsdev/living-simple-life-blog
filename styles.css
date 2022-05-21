@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #707070;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.full-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* Layout */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 3em;
+}
+
+footer {
+  margin-top: 5em;
+  background-color: #143774;
+  color: #ffffff;
+  padding: 3em 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.5em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #5eb3e0;
+}
+
+.active-page {
+  border-bottom: 2px solid #707070;
+}
+
+.active-page:hover {
+  color: #707070;
+}
+
+/* Articles */
+
+.article-primary {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-secondary {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-left {
+  order: 1;
+}
+
+.article-right {
+  order: 2;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+nav,
+.subtitle,
+.article-read-more,
+.widget-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-info {
+  margin: 2em 0;
+}
+
+.article-read-more,
+.article-main-link {
+  color: #1792d2;
+}
+
+.article-read-more {
+  text-decoration: none;
+  letter-spacing: 0.125em;
+}
+
+.article-main-link {
+  text-decoration: underline;
+}
+
+.article-main-link:hover,
+.article-main-link:focus,
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+/* Widgets */
+
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.widget-body {
+  font-size: 1rem;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.widget-post {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widget-post:last-child {
+  border: 0;
+  margin: 0;
+}
+
+.widget-post-title {
+  font-size: 1rem;
+}
+
+/* About me */
+
+.about-me-section h2 {
+  font-size: 1.4rem;
+}
+
+.about-me-section h3 {
+  font-size: 1.2rem;
+  color: #1792d2;
+}
+
+.about-me-section p {
+  font-size: 1rem;
+}
+
+/* Media queries */
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin-left: 2em;
+    text-align: center;
+  }
+
+  p {
+    text-align: start;
+  }
+
+  h1,
+  .subtitle,
+  .article-info {
+    text-align: start;
+  }
+
+  .article-secondary {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-left {
+    width: 30%;
+  }
+
+  .article-right {
+    width: 68%;
+    min-width: 200px;
+    margin-left: 1em;
+  }
+
+  .article-primary {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-primary img {
+    order: -2;
+  }
+
+  .article-primary .article-info {
+    order: -1;
+  }
+
+  .article-secondary img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+    object-position: 45%;
+  }
+}
