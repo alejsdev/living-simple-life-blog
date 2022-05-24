@@ -4,6 +4,7 @@ body {
   font-size: 1.125rem;
   font-weight: 300;
   color: #707070;
+  line-height: 1.6;
 }
 
 img {
@@ -41,7 +42,7 @@ header {
 footer {
   margin-top: 5em;
   background-color: #143774;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 65%);
   padding: 3em 0;
 }
 
@@ -123,9 +124,12 @@ h3 {
 nav,
 .subtitle,
 .article-read-more,
-.widget-title {
+.widget-title,
+.article-read-more {
+  text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .subtitle {
@@ -152,11 +156,6 @@ nav,
 .article-read-more,
 .article-main-link {
   color: #1792d2;
-}
-
-.article-read-more {
-  text-decoration: none;
-  letter-spacing: 0.125em;
 }
 
 .article-main-link {
@@ -200,6 +199,7 @@ nav,
 
 .widget-post-title {
   font-size: 1rem;
+  line-height: 1.2;
 }
 
 /* About me */
